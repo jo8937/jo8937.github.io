@@ -12,7 +12,7 @@ I'm interested in
 
 - google cloud platform ( bigquery / dataflow / auto-ml )
 - treasure data ( fluentd / digdag / embulk )
-- phaser3
+- phaser3 with typescript
 - renpy
 
 

@@ -6,7 +6,7 @@ permalink: /about/
 
 Hello.
 
-I'm Joe-cool, Server-size-engineer work with gamevilcom2usplatform.
+I'm Joe-cool, Server-side-engineer work with gamevilcom2usplatform.
 
 I'm interested in 
 

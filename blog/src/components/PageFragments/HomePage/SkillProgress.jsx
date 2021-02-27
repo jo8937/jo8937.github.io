@@ -6,43 +6,86 @@ const SkillsProgress = () => (
   <div>
     <h2>My Skills</h2>
     <Row gutter={[20, 20]}>
-      <Col xs={24} sm={24} md={12}>
+      <Col xs={24} sm={24} md={6}>
 
         <ProgressBar
-          percent={80}
-          text="Javascript"
+          percent={100}
+          text="Python"
         />
         <ProgressBar
           percent={95}
-          text="ReactJS"
-        />
-        <ProgressBar
-          percent={85}
-          text="Gatsby"
+          text="Java"
         />
         <ProgressBar
           percent={90}
-          text="NodeJS"
+          text="Javascript"
+        />
+        <ProgressBar
+          percent={85}
+          text="Go"
+        />
+        <ProgressBar
+          percent={80}
+          text="C#"
         />
       </Col>
-      <Col xs={24} sm={24} md={12}>
+
+      <Col xs={24} sm={24} md={6}>
         <ProgressBar
-          percent={70}
-          text="Python"
+          percent={95}
+          text="Apache Beam"
+        />
+        <ProgressBar
+          percent={90}
+          text="Springboot + JPA"
+        />
+        <ProgressBar
+          percent={78}
+          text="React + Redux"
+        />
+      </Col>
+
+      <Col xs={24} sm={24} md={6}>
+        <ProgressBar
+          percent={100}
+          text="Bigquery"
         />
         <ProgressBar
           percent={90}
           text="Mysql"
         />
         <ProgressBar
-          percent={78}
-          text="MongoDB"
+          percent={80}
+          text="Redis"
+        />
+      </Col>
+
+      <Col xs={24} sm={24} md={6}>
+        <ProgressBar
+          percent={100}
+          text="Fluentd"
+        />
+        <ProgressBar
+          percent={98}
+          text="Embulk"
+        />
+        <ProgressBar
+          percent={96}
+          text="Digdag"
+        />
+        <ProgressBar
+          percent={90}
+          text="Scribed"
         />
         <ProgressBar
           percent={80}
-          text="Wordpress"
+          text="Kafka"
         />
-      </Col>
+        <ProgressBar
+          percent={70}
+          text="Airflow"
+        />
+      </Col>      
     </Row>
   </div>
 );

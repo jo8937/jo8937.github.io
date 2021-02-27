@@ -6,14 +6,15 @@ import { stripTags, domHtml } from '../../../utils/stripTags';
 import SEO from '../../Seo';
 
 const pageText = {
-  paraOne: `Hello !! My name is Rolwin Reevan Monteiro. I'm a full stack web developer who is
-    passionate about various web technologies. I like to experiment with different web
-    technologies. I have an experience of nearly 3 years working with LAMP stack, MERN stack
-    and ELK stack. Building fancy UI's just like this one that your seeing 😅 and writing blogs about tech stacks
-    is what Rolwin loves to do. Check my blog which I update every week for some Javascript and some
-    cool notes on web technologies.`,
+  paraOne: `게임회사에서 데이터엔지니어로 일하고 있는 조지훈입니다. <br/>
+    웹개발, 게임서버개발을 거쳐서 현재는 데이터 엔지니어를 하고 있습니다. <br/>
+    약 10년의 서버개발경력을 통해 <br/>
+    현재는 ETL 파이프라인 운영을 하며 GO언어 활용을 <br/>
+    약 8년간 Java, C# 을 통한 대규모 서버 어플리케이션 구축을 하였고,<br/>
+    5년간은 <br/>
+    `,
   paraTwo: `Currently I work mostly with Javascript technologies like ReactJS and NodeJS. I also
-    have hands on experience working with cloud infrastructures like <b>AWS/GCP</b> and have deployed applications
+    have hands on experience working with cloud infrastructures like <b>GCP</b> and have deployed applications
     keeping scalability in mind. Docker, Kubernetes, Jenkins, SonarQube are some of the cool
     tools I use for <b>CI/ CD</b>. I'm always a learner and a self taught programmer.`,
 };
@@ -30,61 +31,59 @@ const AboutMe = () => {
           keywords={['Rolwin', 'Reevan', 'Monteiro', 'FullStack developer', 'Javascript', 'ReactJS', 'NodeJS', 'Gatsby']}
         />
         <h1 className="titleSeparate">About Me</h1>
-        <p>
-          {pageText.paraOne}
-        </p>
+        <p dangerouslySetInnerHTML={domHtml(pageText.paraOne)}/>
         <p dangerouslySetInnerHTML={domHtml(pageText.paraTwo)} />
       </div>
       <Row gutter={[20, 20]}>
         <Col xs={24} sm={24} md={12} lg={8}>
           <AboutTile
-            img="location.png"
+            img="dev-python.jpg"
             height={60}
-            alt="location image"
-            textH4="Born and bought up in"
-            textH3="Mangalore, KA, India"
+            alt="Python image"
+            textH4="파이썬에 "
+            textH3="Python"
           />
         </Col>
         <Col xs={24} sm={24} md={12} lg={8}>
           <AboutTile
-            img="coffee.png"
+            img="dev-java.jpg"
             alt="coffee image"
             textH4="Love Coffee"
-            textH3="Coffee + Me = Happiness"
+            textH3="Java"
           />
         </Col>
         <Col xs={24} sm={24} md={12} lg={8}>
           <AboutTile
-            img="meeting.png"
-            alt="meeting image"
-            textH4="Socially Awkward"
-            textH3="At times"
+            img="dev-go.jpg"
+            alt="go image"
+            textH4="GO 언어"
+            textH3="Golang"
           />
         </Col>
         <Col xs={24} sm={24} md={12} lg={8}>
           <AboutTile
-            img="motorcycle.png"
-            alt="motorcycle image"
-            textH4="Love Riding"
-            textH3="Biker for life"
+            img="dev-fluentd.jpg"
+            alt="fluentd image"
+            textH4="Fluentd 로 ETL 파이프라인"
+            textH3="Fluentd"
           />
         </Col>
         <Col xs={24} sm={24} md={12} lg={8}>
           <AboutTile
-            img="web.png"
-            alt="web image"
-            textH4="Self Taught Programmer"
-            textH3="Thanks to the Web Resources"
+            img="dev-kafka.jpg"
+            alt="Kafka"
+            textH4="Kafka "
+            textH3="Kafka"
             height={60}
             width={60}
           />
         </Col>
         <Col xs={24} sm={24} md={12} lg={8}>
           <AboutTile
-            img="graduation.png"
-            alt="graduation image"
-            textH4="Pursued B.Tech in"
-            textH3="Computer Science"
+            img="dev-bigquery.jpg"
+            alt="Bigquery"
+            textH4="모던"
+            textH3="Google Cloud Bigquery"
             height={60}
             width={60}
           />

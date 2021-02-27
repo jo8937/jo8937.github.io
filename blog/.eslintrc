@@ -1,8 +1,10 @@
+/*eslint linebreak-style: ["error", "windows"]*/
 {
   "extends": "airbnb",
   "rules": {
     "react/prop-types": 0,
-    "react/no-danger":0
+    "react/no-danger":0,
+    "linebreak-style": ["error", "windows"]
   },
   "globals": {
     "window": true,

@@ -1,5 +1,6 @@
 import React from 'react';
 import style from './about.module.less';
+import { stripTags, domHtml } from '../../utils/stripTags';
 
 const AboutTile = (props) => {
   const {
@@ -17,7 +18,7 @@ const AboutTile = (props) => {
       </div>
       <div className={`textCenter ${style.mrTp26PX}`}>
         <h3>{textH3 || '' }</h3>
-        <h4>{ textH4 || ''}</h4>
+        <h4 dangerouslySetInnerHTML={domHtml(textH4 || '')}></h4>
       </div>
     </div>
   );

@@ -18,10 +18,8 @@ import style from './tags.module.less';
 
 const TagPage = ({ data, pageContext }) => {
   const { tag } = pageContext;
-  const tagName = Config.tags[tag].name || Utils.capitalize(tag);
+  const tagName = Utils.capitalize(tag);
   const tagPagePath = Config.pages.tag;
-  const tagImage = data.allFile.edges.find((edge) => edge.node.name === tag).node
-    .childImageSharp.fluid;
   const posts = data.allMarkdownRemark.edges;
   return (
     <Layout className="outerPadding">
@@ -29,7 +27,7 @@ const TagPage = ({ data, pageContext }) => {
         <Header />
         <SEO
           title={tagName}
-          description={`All post about ${tagName}. ${Config.tags[tag].description} `}
+          description={`All post about ${tagName}`}
           path={Utils.resolvePageUrl(tagPagePath, tag)}
           keywords={[tagName]}
         />
@@ -39,12 +37,6 @@ const TagPage = ({ data, pageContext }) => {
               #
               {tagName}
             </h1>
-            <div className={style.bannerImgContainer}>
-              <Img className={style.bannerImg} fluid={tagImage} alt={tagName} />
-            </div>
-            <h4 className="textCenter">
-              {Config.tags[tag].description}
-            </h4>
           </div>
           <Row gutter={[20, 20]}>
             {posts.map((post, key) => (

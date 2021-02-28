@@ -4,12 +4,12 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
-const config = require('./config');
-const plugins = require('./gatsby-config.plugins');
-
 require("dotenv").config({
   path: `.env`,
-})
+});
+
+const config = require('./config');
+const plugins = require('./gatsby-config.plugins');
 
 module.exports = {
   pathPrefix: config.pathPrefix,

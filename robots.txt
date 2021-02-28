@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://jo8937.github.io/sitemap.xml
+Host: https://jo8937.github.io

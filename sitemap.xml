@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://jo8937.github.io/blog/teamleader</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jo8937.github.io/blog/googlecloudnext19</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jo8937.github.io/blog/santajump</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jo8937.github.io/blog/gamingongooglecloud</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jo8937.github.io/blog/hiveanalyticsv2web</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jo8937.github.io/blog/hiveanalyticsv2etl</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jo8937.github.io/blog/projectsaturn</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jo8937.github.io/blog/moriasaga-r</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jo8937.github.io/blog/moriasaga-for-kakao</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jo8937.github.io/blog/com2ushubweb</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jo8937.github.io/blog/com2usonlineweb</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jo8937.github.io/blog/bluenet</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jo8937.github.io/tags/typescript</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jo8937.github.io/tags/java</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jo8937.github.io/tags/springboot</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jo8937.github.io/tags/jpa</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jo8937.github.io/tags/react</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jo8937.github.io/tags/redux</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jo8937.github.io/tags/bigquery</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jo8937.github.io/tags/fluentd</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jo8937.github.io/tags/python</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jo8937.github.io/tags/embulk</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jo8937.github.io/tags/digdag</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jo8937.github.io/tags/beam</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jo8937.github.io/tags/csharp</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jo8937.github.io/tags/proudnet</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jo8937.github.io/tags/elk</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jo8937.github.io/tags/mysql</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jo8937.github.io/tags/redis</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jo8937.github.io/tags/php</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jo8937.github.io/tags/postgresql</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jo8937.github.io/tags/oracle</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jo8937.github.io/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jo8937.github.io/resume/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jo8937.github.io/blog/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jo8937.github.io/contact/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://jo8937.github.io/tags/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+</urlset>

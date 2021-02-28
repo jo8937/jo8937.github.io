@@ -9,6 +9,8 @@ import { globalHistory } from '@reach/router';
 import style from './sidebar.module.less';
 import { useWindowSize } from '../../../utils/hooks';
 import Config from '../../../../config';
+import { Select } from 'antd';
+const { Option } = Select;
 
 const { Content } = Layout;
 const {
@@ -50,7 +52,7 @@ const DomContent = () => (
         <li className={`${style.contactBlockItem}`}>
           <span><FeatherIcon size="19" icon="map-pin" /></span>
           {' '}
-&nbsp; &nbsp; 서울 마포구
+&nbsp; &nbsp; 서울 마포구 공덕동
         </li>
         <li className={`${style.contactBlockItem}`}>
           <span><FeatherIcon size="19" icon="mail" /></span>
@@ -63,9 +65,18 @@ const DomContent = () => (
           </a>
         </li>
       </ul>
-      {/* <div className={style.resumeDownload}>
-        <a href="../resume.pdf" download target="_blank">Download CV</a>
-      </div> */}
+      <div className={style.resumeDownload}>
+      <Select defaultValue="ko" style={{ width: 120 }}>
+          <Option value="ko">한국어</Option>
+          <Option value="ja" disabled>
+            日本語
+          </Option>
+          <Option value="en" disabled>
+            English
+          </Option>
+        </Select>
+        {/* <a href="../resume.pdf" download target="_blank">Download CV</a> */}
+      </div>
     </div>
   </aside>
 );

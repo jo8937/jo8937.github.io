@@ -19,10 +19,11 @@ const pageText = {
     tools I use for <b>CI/ CD</b>. I'm always a learner and a self taught programmer.`,
 };
 
+
 const AboutMe = () => {
   const description = `${pageText.paraOne} ${stripTags(pageText.paraTwo)}`;
   return (
-    <>
+      <>
       <div>
         <SEO
           title="About"
@@ -34,6 +35,7 @@ const AboutMe = () => {
         <p dangerouslySetInnerHTML={domHtml(pageText.paraOne)}/>
         <p dangerouslySetInnerHTML={domHtml(pageText.paraTwo)} />
       </div>
+      
       <Row gutter={[20, 20]}>
         <Col xs={24} sm={24} md={12} lg={8}>
           <AboutTile
@@ -88,7 +90,7 @@ const AboutMe = () => {
             width={60}
           />
         </Col>
-      </Row>
+      </Row>           
     </>
   );
 };

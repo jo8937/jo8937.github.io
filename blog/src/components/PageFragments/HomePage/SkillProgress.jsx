@@ -4,12 +4,12 @@ import ProgressBar from '../../Progress';
 
 const SkillsProgress = () => (
   <div>
-    <h2>My Skills</h2>
+    <h2 className="titleSeparate2">기술 숙련도</h2>
     <Row gutter={[20, 20]}>
       <Col xs={24} sm={24} md={6}>
 
         <ProgressBar
-          percent={100}
+          percent={99}
           text="Python"
         />
         <ProgressBar
@@ -40,14 +40,14 @@ const SkillsProgress = () => (
           text="Springboot + JPA"
         />
         <ProgressBar
-          percent={78}
+          percent={85}
           text="React + Redux"
         />
       </Col>
 
       <Col xs={24} sm={24} md={6}>
         <ProgressBar
-          percent={100}
+          percent={99}
           text="Bigquery"
         />
         <ProgressBar
@@ -62,15 +62,15 @@ const SkillsProgress = () => (
 
       <Col xs={24} sm={24} md={6}>
         <ProgressBar
-          percent={100}
+          percent={95}
           text="Fluentd"
         />
         <ProgressBar
-          percent={98}
+          percent={95}
           text="Embulk"
         />
         <ProgressBar
-          percent={96}
+          percent={95}
           text="Digdag"
         />
         <ProgressBar

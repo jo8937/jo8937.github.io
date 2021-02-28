@@ -34,6 +34,8 @@ module.exports = [
       path: `${__dirname}/content`,
     },
   },
+  "gatsby-remark-embed-youtube",
+  "gatsby-remark-responsive-iframe",
   {
     resolve: 'gatsby-transformer-remark',
     options: {
@@ -54,6 +56,8 @@ module.exports = [
           },
         },
         'gatsby-remark-prismjs',
+        'gatsby-remark-youtube',
+        'gatsby-remark-responsive-iframe',
       ],
     },
   },

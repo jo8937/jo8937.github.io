@@ -19,11 +19,11 @@ const {
 
 const DomContent = () => (
   <aside>
-    <div className={style.profileAvatar} />
+    <div className={style.profileAvatar} onClick={() => { location.href="#"; }}/>
     <div className={`${style.name} centerAlign`}>
       <div className={`${style.boxName} centerAlign`}>
         <h2>
-          <span>조지훈</span>
+          <span onClick={() => { location.href="/"; }}>조지훈</span>
         </h2>
       </div>
       <div className={`${style.badge} ${style.badgeGray}`}>Software Engineer</div>

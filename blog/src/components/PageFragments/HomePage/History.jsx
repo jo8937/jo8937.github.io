@@ -10,7 +10,7 @@ const companyHistory = [
     content:'데이터 엔지니어',
   },
   {
-    title: 'NHN 스타피시',
+    title: 'NHN 스타피쉬',
     img:'../nhn.jpg',
     desc:'2012.08.16 ~ 2016.01.05 (3년)',
     content:'게임 서버 프로그래머',

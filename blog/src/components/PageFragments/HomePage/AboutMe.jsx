@@ -13,7 +13,7 @@ const pageText = {
   데이터 엔지니어가 되기 전에는 웹개발, 게임서버개발도 경험하였습니다.<br/>
   분야를 한정짓지 않고, 소프트웨어 엔지니어로서 타인에게 더 큰 가치를 줄 수 있는 길을 계속 찾아 해나가려 합니다.<br/>
     `,
-  paraTwo: `현재 관심 기술은 프론트엔드 영역에선 Javascript(React), Unity, 백엔드 영역에선 Kubernetes, MLOps 입니다.<br/>
+  paraTwo: `현재 관심 기술은 프론트엔드 영역에선 Javascript(React) 백엔드 영역에선 Kafka, MLOps 입니다.<br/>
   본 웹사이트도 react 기반 gatsby 를 통해 직접 제작하였습니다.  
   `,
 };

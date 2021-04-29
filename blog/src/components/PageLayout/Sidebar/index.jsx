@@ -68,7 +68,7 @@ const DomContent = () => (
       <div className={style.resumeDownload}>
       <Select defaultValue="ko" style={{ width: 120 }}>
           <Option value="ko">한국어</Option>
-          <Option value="ja" disabled>
+          <Option value="ja">
             日本語
           </Option>
           <Option value="en" disabled>

@@ -2,25 +2,38 @@ import React from 'react';
 import { Row, Col } from 'antd';
 import AboutTile from '../../AbouTile';
 import { stripTags, domHtml } from '../../../utils/stripTags';
+import { getCurrentLangKey, getLangs, getUrlForLang } from 'ptz-i18n';
 
 import SEO from '../../Seo';
 
-const pageText = {
-  paraOne: `게임회사에서 <b>데이터 엔지니어</b>로 일하고 있는 조지훈입니다. <br/>
-  <b>구글 클라우드 플랫폼</b> 기반의 <b>DW</b> 및 <b>ETL 파이프라인</b> 구축과 운영을 하고 있습니다.<br/>
-  상시 업무로 <b>Python, SQL, ShellScript</b>을 주로 사용하며, 서버 개발은 <b>Java, Go</b>언어를 주로 사용합니다.<br/>
-  <br/>
-  데이터 엔지니어가 되기 전에는 웹개발, 게임서버개발도 경험하였습니다.<br/>
-  분야를 한정짓지 않고, 소프트웨어 엔지니어로서 타인에게 더 큰 가치를 줄 수 있는 길을 계속 찾아 해나가려 합니다.<br/>
+const pageText = 
+{
+  ko : {
+    paraOne: `게임회사에서 <b>데이터 엔지니어</b>로 일하고 있는 조지훈입니다. <br/>
+    <b>구글 클라우드 플랫폼</b> 기반의 <b>DW</b> 및 <b>ETL 파이프라인</b> 구축과 운영을 하고 있습니다.<br/>
+    상시 업무로 <b>Python, SQL, ShellScript</b>을 주로 사용하며, 서버 개발은 <b>Java, Go</b>언어를 주로 사용합니다.<br/>
+    <br/>
+    데이터 엔지니어가 되기 전에는 웹개발, 게임서버개발도 경험하였습니다.<br/>
+    분야를 한정짓지 않고, 소프트웨어 엔지니어로서 타인에게 더 큰 가치를 줄 수 있는 길을 계속 찾아 해나가려 합니다.<br/>
+      `,
+    paraTwo: `현재 관심 기술은 프론트엔드 영역에선 Javascript(React) 백엔드 영역에선 Kafka, MLOps 입니다.<br/>
+    본 웹사이트도 react 기반 gatsby 를 통해 직접 제작하였습니다.  
     `,
-  paraTwo: `현재 관심 기술은 프론트엔드 영역에선 Javascript(React) 백엔드 영역에선 Kafka, MLOps 입니다.<br/>
-  본 웹사이트도 react 기반 gatsby 를 통해 직접 제작하였습니다.  
-  `,
-};
-
+  },
+  ja: {
+    paraOne: `データエンジニアです
+      `,
+    paraTwo: `テスト
+    `,
+  }
+}
+;
 
 const AboutMe = () => {
-  const description = `${pageText.paraOne} ${stripTags(pageText.paraTwo)}`;
+  
+  const langKey = getCurrentLangKey(["ko","ja","en","cn"], "ko", location.pathname);
+
+  const description = `${pageText[langKey].paraOne} ${stripTags(pageText[langKey].paraTwo)}`;
   return (
       <>
       <div>
@@ -31,8 +44,8 @@ const AboutMe = () => {
           keywords={['Rolwin', 'Reevan', 'Monteiro', 'FullStack developer', 'Javascript', 'ReactJS', 'NodeJS', 'Gatsby']}
         />
         <h1 className="titleSeparate">About Me</h1>
-        <p dangerouslySetInnerHTML={domHtml(pageText.paraOne)}/>
-        <p dangerouslySetInnerHTML={domHtml(pageText.paraTwo)} />
+        <p dangerouslySetInnerHTML={domHtml(pageText[langKey].paraOne)}/>
+        <p dangerouslySetInnerHTML={domHtml(pageText[langKey].paraTwo)} />
       </div>
       
       <Row gutter={[20, 20]}>

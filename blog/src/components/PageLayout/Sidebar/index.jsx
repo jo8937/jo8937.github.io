@@ -10,6 +10,8 @@ import style from './sidebar.module.less';
 import { useWindowSize } from '../../../utils/hooks';
 import Config from '../../../../config';
 import { Select } from 'antd';
+import { getCurrentLangKey, getLangs, getUrlForLang } from 'ptz-i18n';
+
 const { Option } = Select;
 
 const { Content } = Layout;
@@ -17,7 +19,12 @@ const {
   facebook, github, instagram, linkedin, stackoverflow, medium
 } = Config.social;
 
-const DomContent = () => (
+const DomContent = () =>{
+  const defaultLangKey = "ko";
+  const langKey = getCurrentLangKey(["ko","ja","en","cn"], defaultLangKey, location.pathname);
+  const homeLink = `/${langKey}/`.replace(`/${defaultLangKey}/`, '/');
+  
+  return (
   <aside>
     <div className={style.profileAvatar} onClick={() => { location.href="#"; }}/>
     <div className={`${style.name} centerAlign`}>
@@ -66,7 +73,7 @@ const DomContent = () => (
         </li>
       </ul>
       <div className={style.resumeDownload}>
-      <Select defaultValue="ko" style={{ width: 120 }}>
+      <Select defaultValue={langKey} style={{ width: 120 }} onChange={(value) => { location.href = `/${value}`.replace(`/${defaultLangKey}`, '/'); }}>
           <Option value="ko">한국어</Option>
           <Option value="ja">
             日本語
@@ -79,7 +86,7 @@ const DomContent = () => (
       </div>
     </div>
   </aside>
-);
+)};
 
 const Sidebar = (props) => {
   const [width] = useWindowSize();

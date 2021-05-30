@@ -9,21 +9,24 @@ import SEO from '../../Seo';
 const pageText = 
 {
   ko : {
-    paraOne: `게임회사에서 <b>데이터 엔지니어</b>로 일하고 있는 조지훈입니다. <br/>
-    <b>구글 클라우드 플랫폼</b> 기반의 <b>DW</b> 및 <b>ETL 파이프라인</b> 구축과 운영을 하고 있습니다.<br/>
-    상시 업무로 <b>Python, SQL, ShellScript</b>을 주로 사용하며, 서버 개발은 <b>Java, Go</b>언어를 주로 사용합니다.<br/>
+    paraOne: `라인플러스에서 <b>DW/BI 데이터 엔지니어</b>로 일하고 있는 조지훈입니다. <br/>
+    하둡 기반의 DW 및 ETL 파이프라인 구축과 운영을 하고 있습니다.<br/>
+    상시 업무로 Python, Java, SQL 등을 주로 사용합니다.<br/>
     <br/>
     데이터 엔지니어가 되기 전에는 웹개발, 게임서버개발도 경험하였습니다.<br/>
-    분야를 한정짓지 않고, 소프트웨어 엔지니어로서 타인에게 더 큰 가치를 줄 수 있는 길을 계속 찾아 해나가려 합니다.<br/>
+    소프트웨어 엔지니어로서 사람들에게 더 큰 가치를 줄 수 있는 저만의 길을 계속 찾아가려고 합니다.<br/>
       `,
-    paraTwo: `현재 관심 기술은 프론트엔드 영역에선 Javascript(React) 백엔드 영역에선 Kafka, MLOps 입니다.<br/>
-    본 웹사이트도 react 기반 gatsby 를 통해 직접 제작하였습니다.  
+    paraTwo: `방대한 집계를 다루는 DW영역은 데이터 엔지니어 업무 중에서도 많이 힘든 부분입니다.<br/>
+    이러한 부분들을 간략화하여 더 많은 사람들이 쉽게 DW 운영을 할 수 있는 방법론을 찾으려 합니다
     `,
   },
   ja: {
-    paraOne: `データエンジニアです
+    paraOne: `韓国のLine＋でゲームプラットフォームのDW/BIデータエンジニアをやってる「ジョ・ジフン」と申します。<br/>
+    データエンジニアになる前はSI、ゲームサーバー開発もやってました。
       `,
-    paraTwo: `テスト
+    paraTwo: `膨大な集計をたくさん管理するBI/DWの領域は、エンジニアとしては辛い業務が多いです。<br/>
+    この仕事がもっと簡単なものになれるように、いろんな研究をしていきたいと思ってます。<br/>
+    あと、日本語がもっと上手くなれるよう頑張ってます。
     `,
   }
 }
@@ -31,7 +34,12 @@ const pageText =
 
 const AboutMe = () => {
   
-  const langKey = getCurrentLangKey(["ko","ja","en","cn"], "ko", location.pathname);
+  let pathname = "";
+  if(typeof window !== `undefined`) {
+    pathname = location.pathname;
+  }
+  const defaultLangKey = "ko";
+  const langKey = getCurrentLangKey(["ko","ja","en","cn"], defaultLangKey, pathname);
 
   const description = `${pageText[langKey].paraOne} ${stripTags(pageText[langKey].paraTwo)}`;
   return (
@@ -62,7 +70,7 @@ const AboutMe = () => {
           <AboutTile
             img="dev-java.jpg"
             alt="coffee image"
-            textH4="규모가 큰 개발은 Java 경험이 가장 많습니다. 최근 프로젝트에선 Springboot + JPA 를 사용했습니다"
+            textH4="규모가 큰 개발은 Java 경험이 가장 많습니다. 최근 프로젝트에선 Springboot 를 사용했습니다"
             textH3="Java"
           />
         </Col>
@@ -70,11 +78,11 @@ const AboutMe = () => {
           <AboutTile
             img="dev-go.jpg"
             alt="go image"
-            textH4="경험이 많지는 않으나 활용처가 계속 늘고 있습니다. 일부 성능이 중요한 부분에 도입하여 사용중입니다."
+            textH4="경험이 많지는 않으나 일부 성능이 중요한 부분에 도입하여 사용중입니다."
             textH3="Golang"
           />
         </Col>
-        <Col xs={24} sm={24} md={12} lg={8}>
+        {/* <Col xs={24} sm={24} md={12} lg={8}>
           <AboutTile
             img="dev-fluentd.jpg"
             alt="fluentd image"
@@ -101,7 +109,7 @@ const AboutMe = () => {
             height={60}
             width={60}
           />
-        </Col>
+        </Col> */}
       </Row>           
     </>
   );

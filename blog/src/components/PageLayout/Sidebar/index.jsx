@@ -16,12 +16,16 @@ const { Option } = Select;
 
 const { Content } = Layout;
 const {
-  facebook, github, instagram, linkedin, stackoverflow, medium
+  facebook, github, instagram, linkedin, stackoverflow, medium, qiita
 } = Config.social;
 
-const DomContent = () =>{
+const DomContent = (props) =>{
+  let pathname = "";
+  if(typeof window !== `undefined`) {
+    pathname = location.pathname;
+  }
   const defaultLangKey = "ko";
-  const langKey = getCurrentLangKey(["ko","ja","en","cn"], defaultLangKey, location.pathname);
+  const langKey = getCurrentLangKey(["ko","ja","en","cn"], defaultLangKey, pathname);
   const homeLink = `/${langKey}/`.replace(`/${defaultLangKey}/`, '/');
   
   return (
@@ -42,12 +46,18 @@ const DomContent = () =>{
         <a href={linkedin} target="_blank" label="button" rel="noopener noreferrer"><FA name="linkedin" /></a>
         <a href={stackoverflow} target="_blank" label="button" rel="noopener noreferrer"><FA name="stack-overflow" /></a>
         <a href={medium} target="_blank" label="button" rel="noopener noreferrer"><FA name="medium" /></a>
+        <a href={qiita} target="_blank" label="button" rel="noopener noreferrer">
+        <span className="fa-stack">
+          <i className="fa fa-square fa-stack-1x"></i>
+          <i className="fa fa-search fa-stack-1x fa-inverse fa-2x"></i>
+      </span>
+        </a>
       </div>
       <ul className={`box ${style.badge} contactBlock`}>
       <li className={`${style.contactBlockItem}`}>
           <span><FeatherIcon size="19" icon="briefcase" /></span>
           {' '}
-&nbsp; &nbsp; @게임빌컴투스플랫폼
+&nbsp; &nbsp; @라인플러스
         </li>
         <li className={`${style.contactBlockItem}`}>
           <span>

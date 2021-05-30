@@ -4,9 +4,15 @@ import { Row, Col } from 'antd';
 
 const companyHistory = [
   {
+    title: '라인플러스',
+    img:'../lineplus.jpg',
+    desc:'2016.05.24 ~ 현재',
+    content:'데이터 엔지니어',
+  },
+  {
     title: '게임빌컴투스플랫폼',
     img:'../gcp.jpg',
-    desc:'2016.01.25 ~ 현재 (5년+)',
+    desc:'2016.01.25 ~ 2021.05.18 (5년)',
     content:'데이터 엔지니어',
   },
   {

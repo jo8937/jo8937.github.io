@@ -21,7 +21,7 @@ module.exports = {
     instagram: 'https://www.instagram.com/jo8937',
     linkedin: 'https://www.linkedin.com/in/jo8937',
     stackoverflow: 'https://stackoverflow.com/users/6375098/jo8937',
-    qiita: 'https://stackoverflow.com/users/6375098/jo8937',
+    qiita: 'https://qiita.com/jo8937',
     medium: 'https://medium.com/@jihooncho',
     rss: '/rss.xml',
   },

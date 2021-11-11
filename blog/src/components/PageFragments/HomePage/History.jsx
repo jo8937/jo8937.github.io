@@ -6,7 +6,7 @@ const companyHistory = [
   {
     title: '라인플러스',
     img:'../lineplus.jpg',
-    desc:'2016.05.24 ~ 현재',
+    desc:'2021.05.24 ~ 현재',
     content:'데이터 엔지니어',
   },
   {
